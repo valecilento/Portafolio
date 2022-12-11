@@ -1,0 +1,454 @@
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+ol, ul,li {
+    list-style: none;
+    margin-right: 25px;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+
+.container{
+    background: #5f766b;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+/*Sección Menu*/
+
+section.menu{
+    background-color: #3a4f45;
+    box-shadow: 2px 2px 5px #999;
+    display: flex;
+    flex-direction: row;
+    height: 90px;
+    justify-content: right;
+    opacity: 0.9;
+    position: fixed;     
+    width: 100%;
+}
+.menu__header{
+    justify-content:center;
+}
+.nav{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: space-between;
+    width: 100%;
+}
+.menu__list{
+   align-items: center;
+   color: white;
+   display: flex;
+   flex-direction: row;
+   font-size: 18px;
+   margin-top: 2em;
+}
+.menu__list a:hover{
+  color: #ccacac;
+  font-size: 20px;
+  font-weight: bold;
+}
+.menu__list__item{
+    margin: 0.7em;
+}
+
+
+/*Sección Title*/
+
+section.title{
+    color: whitesmoke;
+    margin-top: 90px;
+}
+.title__container{
+    display: flex;
+    flex-direction: column;
+}
+.title__bio{
+    display: flex; 
+    justify-content: center;
+    font-size: 45px;
+    font-family: ui-sans-serif;
+    margin: 14%;
+}
+.title__contenedorflex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.title__subsection{
+    justify-content: flex-start;
+    margin-left: 15px;
+}
+.title__network__item:hover{
+    color: #393d3b;
+    text-decoration: underline;
+    text-transform: uppercase;
+    padding: 0.3em;
+}
+
+/*Sección About*/
+
+.about__container{
+    display: flex;
+    flex-direction: column;
+}
+.about__title{
+    display: flex;
+    border: 4px solid #d0d0d0;
+    color: white;
+    padding: 0.5em;
+    justify-content: center;
+}
+.about__paragraph{
+    color: rgb(225, 218, 218);
+    font-size: larger;
+    text-align: justify;
+    margin: 40px 40px 0 40px;
+}
+
+
+
+/*sección skills*/
+
+.skills__title{
+    border: 4px solid #d0d0d0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    margin: 3em 0;
+    padding: 0.5em;
+}
+.skills__subtitle{
+    color: white;
+    font-size: larger;
+    margin:2em;
+}
+.skills__line{
+    display: flex;
+    margin: 1em;
+}
+.skills__box{
+    border: 4px solid #d0d0d0;
+    box-shadow: 10px 10px 5px rgb(56, 54, 54);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 9px;
+    text-align: justify;
+    -webkit-transition: all .8s ease;
+}
+.skills__box:hover{
+    border: 6px solid #cca3a3;
+    padding: 1em;
+    -webkit-transition: all .8s ease;
+}
+.skills__img{
+    display: flex;
+    flex: 60%;
+    justify-content: center;
+    width: 10em;    
+}
+.skills__name{
+    display: flex;
+    font-weight: bold;
+    margin: 1em;
+}
+.skills__description{
+    inline-size: 90%;
+    margin: auto;
+}
+
+
+/* Formación Académica*/
+
+section.academic{
+    align-items: center;
+    color: rgb(237, 230, 230);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.academic__title{
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+}
+.academic__courses{
+    display: flex;
+    flex-direction: row;
+}
+.academic__courses__item__title, .certificaciones__cursos__button{
+    display: flex;
+    justify-content: center;
+}
+.certificaciones__cursos__button{
+    color: #2f3130;
+    font-weight: bold;
+    text-shadow: #2f3130;
+}
+
+/* certificaciones*/
+
+.certificaciones{
+    align-items: center;
+    color: rgb(237, 230, 230);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.certificaciones_title{
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+}
+.certificaciones__cursos{
+    display: flex;
+    flex-direction: row;
+}
+.certificaciones__cursos__item__title{
+    display: flex;
+    justify-content: center;
+}
+.certificaciones__cursos__button{
+    border: 4px solid #8b8484;
+    border-radius: 5px;
+    padding: 0.5em;
+}
+.certificaciones__cursos__button:hover{
+    padding: 0.3em;
+    background: #879b92;
+}
+
+
+/* experiencia*/
+
+section.experience{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.experience__section__title{
+    margin: 2em;
+    color: rgb(237, 230, 230);
+}
+
+.experience__img{
+    border: 4px solid #d0d0d0;
+    display: flex;
+    justify-content: center;
+    width: 30em;
+}
+.experience__box{
+    border: 6px solid #d0d0d0;
+    color: rgb(237, 230, 230);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: center;
+    margin: 9px;
+    padding: 3em;
+    width: 80%;
+}
+.experience__info-container{
+    align-items: center;
+    display: flex;
+    font-size: medium;
+    flex-direction: column;
+    flex: 40%;
+    margin-left: 3em;
+}
+.experiencia__boton__demo{
+    background: #5f766b;
+    border-radius: 8px;
+    border:  4px solid #8b8484;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 9px;
+    padding: 5px 10px;
+    width: 10em;
+}
+.experiencia__boton__demo:hover{
+    background: #879b92;
+    padding: 0.3em;
+}
+
+/*Contacto*/
+
+.formcontato__contacto{
+    display: flex;
+}
+.formcontato__text{
+    margin: 4em;
+}
+.formcontato__form{
+    align-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+.formcontato__input{
+    border: 2.5px solid #2f3130;
+    border-radius: 5px;
+    box-shadow: 10px 5px 5px rgb(56, 54, 54);
+    margin-bottom: 1em;
+    padding: 0.9em;
+}
+.formcontato__textarea{
+    border: 2.5px solid #2f3130;
+    border-radius: 5px;
+    box-shadow: 10px 5px 5px rgb(56, 54, 54);
+}
+.formcontato__botao{
+    background: #496055;
+    border: 1px solid #2f3130;
+    border-radius: 5px;
+    color: white;
+    margin-top: 0.5em;
+    padding: 15px 10px;
+}
+.formcontato__botao:hover{
+    background: #668576;
+    color:black;
+}
+
+/*footer*/
+
+
+.footer__rodapie{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer__rodapie___copy{
+    display: flex;
+    justify-content: center;
+}
+.footer__rodapie___perfiles{
+    display: flex;
+    justify-content: center;
+}
+
+
+/*Tablet*/
+@media (max-width: 980px) {
+
+/* Menú */
+.about__title{
+    width: 96%;
+}
+
+/*Skills*/
+.skills__title{
+    width: 96%;
+}
+.skills__line{
+   flex-wrap: wrap;
+}
+
+/*Formación Académica*/
+section.academic{
+    margin: auto;
+}
+.academic__courses {
+    flex-direction: column;
+}
+.academic__courses__box{
+    margin: 1.5em;
+}
+.certificaciones{
+    margin: auto;
+}
+.certificaciones__cursos {
+  display: flex;
+  flex-direction: column;
+}
+.certificaciones__cursos__box{
+    margin: 1.5em;
+}
+/*Experiencia Profesional*/
+.experience__box{
+    flex-direction:column;
+    width: 60%;
+}
+.formcontato__title, .formcontato__subtext{
+    display: flex;
+    justify-content: center;
+}
+
+}
+
+
+/*Mobile*/
+@media (max-width: 425px) {
+
+/*Menu*/
+section.menu {
+    width: auto;
+}
+.about__title{
+    width: 93%;
+}
+.menu__list {
+    font-size: 12px;
+}
+.menu__list a:hover{
+    font-size: 14px;
+  }
+
+/*Titulo*/
+.title__bio {
+    margin: 2.7em 0.3em 2.7em 0.3em;
+}
+
+/*Skills*/
+.skills__title{
+    width: 93%;
+}
+.skills__line{
+    flex-wrap: wrap;
+ }
+ 
+/*Formación Académica*/
+.academic__courses {
+    flex-direction: column;
+}
+.academic__courses__box{
+    margin: 1.5em;
+}
+.certificaciones__cursos {
+  display: flex;
+  flex-direction: column;
+}
+.certificaciones__cursos__box{
+    margin: 1.5em;
+}
+.academic__courses__item__subtitle, .certificaciones__cursos__item__subtitle{
+    display: flex;
+    justify-content: center;
+}
+/*Experiencia Profesional*/
+.experience__box{
+    flex-direction:column;
+    width: 60%;
+}
+.experience__img{
+    width: auto;
+}
+
+ /*Contacto*/
+ .formcontato__title, .formcontato__subtext{
+    display: flex;
+    justify-content: center;
+}
+
+}
